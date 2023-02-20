@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head th:replace="fragments/_header :: head(pageTitle='Three Easy Steps : Step 1')">
+<body>
+    <div th:insert="fragments/_header :: header"></div>
+    <div class = "text">
+        <h2>Start with a list</h2>
+        <p>The most important things to start of is to make a specific list of each individual steps.
+        This helps by writing down any ideas that may be helpful or useful to get to the finished product.</p>
+    </div>
+    <img th:src="@{/img/list.jpg}" alt="An image of someone writing a list.">
+    <a th:href="@{/}" class="button" id="back">< Back</a>
+    <a th:href="@{/step2}" class="button" id="next">Next ></a>
+    <div th:replace="fragments/_footer :: footer"></div>
+</body>
+</html>

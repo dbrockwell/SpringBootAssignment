@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head th:replace="fragments/_header :: head(pageTitle='Three Easy Steps : Step 3')">
+<body>
+    <div th:insert="fragments/_header :: header"></div>
+    <div class = "text">
+        <h2>Make it flow</h2>
+        <p>The steps should flow and make sense together.
+        Once it has been narrowed down to three steps, read through it to make sure it is understandable.
+        For whoever is reading those steps should be able to understand it properly to complete that task.</p>
+    </div>
+    <img th:src="@{/img/flow.jpg}" alt="Image of the word flow with flowing lines behind it.">
+    <a th:href="@{/step2}" class="button" id="back">< Back</a>
+    <div th:replace="fragments/_footer :: footer"></div>
+</body>
+</html>

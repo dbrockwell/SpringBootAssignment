@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head th:replace="fragments/_header :: head(pageTitle='Three Easy Steps : Home')">
+</head>
+<body>
+    <div th:insert="fragments/_header :: header"></div>
+    <div class = "text">
+        <h2>Three easy steps to create three easy steps</h2>
+        <p>It may be difficult to come ups with just three steps for a topic that would be easy for anyone to understand.
+        It is important to know how to create three simple steps to ensure people know fully about a topic especially ones difficult to explain.
+        The best way to learn how to create three easy steps is with three easy steps so that you would be able to create three easy steps in the future.</p>
+    </div>
+    <img th:src="@{/img/3steps.png}" alt="Three steps labeled step 1, step 2, and step 3 with an arrow pointing upward.">
+    <a th:href="@{/step1}" class="button" id="next">Next ></a>
+    <div th:replace="fragments/_footer :: footer"></div>
+</body>
+</html>

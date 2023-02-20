@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head th:replace="fragments/_header :: head(pageTitle='Three Easy Steps : Step 2')">
+<body>
+    <div th:insert="fragments/_header :: header"></div>
+    <div class = "text">
+        <h2>Narrow and Cut</h2>
+        <p>Once the list is created, it can now be narrowed and cut down.
+        It is important to combine similar steps together to lower the number of steps.
+        Cutting any unnecessary steps to lower complexity.</p>
+        <div class="warning">
+            <h3>Warning!</h3>
+            <p>Always make sure warning stand out to prevent any possible mistakes or dangers the reader could encounter.
+            Similar to a warning like this one.</p>
+        </div>
+    </div>
+    <img th:src="@{/img/narrow.jpg}" alt="A board of post-it notes and lines connecting them.">
+    <a th:href="@{/step1}" class="button" id="back">< Back</a>
+    <a th:href="@{/step3}" class="button" id="next">Next ></a>
+    <div th:replace="fragments/_footer :: footer"></div>
+</body>
+</html>
